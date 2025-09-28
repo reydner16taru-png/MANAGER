@@ -1,0 +1,5 @@
+{
+  "name": "Oficina Manager",
+  "description": "A frontend application for a workshop management system, featuring user login and registration capabilities, leading to a user dashboard.",
+  "requestFramePermissions": []
+}

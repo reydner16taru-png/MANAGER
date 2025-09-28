@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oficina Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: var(--color-bg-primary);
+      transition: background-color 0.3s ease;
+    }
+    :root.theme-dark {
+        --color-bg-primary: #0f172a;
+        --color-bg-secondary: #1e293b;
+        --color-bg-tertiary: #334155;
+        --color-bg-tertiary-hover: #475569;
+        --color-border-primary: #334155;
+        --color-border-secondary: #475569;
+        --color-text-primary: #f8fafc;
+        --color-text-secondary: #94a3b8;
+        --color-text-accent: #67e8f9;
+        --color-accent-primary: #0891b2;
+        --color-accent-secondary: #06b6d4;
+        --color-danger-bg: rgba(239, 68, 68, 0.1);
+        --color-danger-text: #f87171;
+        --color-success-bg: rgba(74, 222, 128, 0.1);
+        --color-success-text: #86efac;
+        --color-warning-bg: rgba(251, 191, 36, 0.1);
+        --color-warning-text: #facc15;
+        --color-info-bg: rgba(59, 130, 246, 0.1);
+        --color-info-text: #93c5fd;
+    }
+    :root.theme-neutral {
+        --color-bg-primary: #e5e7eb;
+        --color-bg-secondary: #f9fafb;
+        --color-bg-tertiary: #f3f4f6;
+        --color-bg-tertiary-hover: #e5e7eb;
+        --color-border-primary: #d1d5db;
+        --color-border-secondary: #9ca3af;
+        --color-text-primary: #1f2937;
+        --color-text-secondary: #4b5563;
+        --color-text-accent: #0369a1;
+        --color-accent-primary: #0ea5e9;
+        --color-accent-secondary: #0284c7;
+        --color-danger-bg: #fee2e2;
+        --color-danger-text: #dc2626;
+        --color-success-bg: #dcfce7;
+        --color-success-text: #16a34a;
+        --color-warning-bg: #fef9c3;
+        --color-warning-text: #ca8a04;
+        --color-info-bg: #dbeafe;
+        --color-info-text: #2563eb;
+    }
+    :root.theme-light {
+        --color-bg-primary: #f8fafc;
+        --color-bg-secondary: #ffffff;
+        --color-bg-tertiary: #f1f5f9;
+        --color-bg-tertiary-hover: #e2e8f0;
+        --color-border-primary: #e2e8f0;
+        --color-border-secondary: #cbd5e1;
+        --color-text-primary: #020617;
+        --color-text-secondary: #475569;
+        --color-text-accent: #0d9488;
+        --color-accent-primary: #14b8a6;
+        --color-accent-secondary: #0f766e;
+        --color-danger-bg: #fee2e2;
+        --color-danger-text: #b91c1c;
+        --color-success-bg: #f0fdf4;
+        --color-success-text: #15803d;
+        --color-warning-bg: #fefce8;
+        --color-warning-text: #a16207;
+        --color-info-bg: #eff6ff;
+        --color-info-text: #1d4ed8;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+</head>
+<body class="">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
